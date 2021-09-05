@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  justify-content: center;
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    rgb(237, 233, 222) 0%,
+    rgb(233, 237, 222) 25%,
+    rgb(217, 126, 91) 55%,
+    rgb(207, 79, 29) 75%
+  );
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1200px;
+
+  margin: auto;
+  margin-top: 70px;
+  padding: 10px;
+}
+
+.gallery {
+  margin: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.gallery-item {
+  width: calc((100% - 8 * 15px) / 4);
+  margin: 15px;
+  height: 250px;
+  border: 3px solid rgba(217, 177, 91, 0.8);
+  overflow: hidden;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-wraper {
+  height: 210px;
+  overflow: hidden;
+}
+
+.image-photo {
+  height: 100%;
+  object-fit: cover;
+}
+
+.stats {
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stats-item {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.material-icons {
+  color: #d9b15b;
+}
+
+.title {
+  color: #875e05;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+input {
+  background-color: #d1cab8;
+  border-radius: 25px;
+  border: solid 1px;
+  color: rgb(13, 116, 196);
+  font-size: 18px;
+  height: 50px;
+  outline: 0;
+  padding: 4px 20px;
+  margin-right: 5px;
+}
+
+.load-more-btn,
+.search-btn {
+  background-color: #0d74c4;
+  border-radius: 25px;
+  border: none;
+  color: #d1cab8;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  text-align: center;
+  width: 200px;
+}
+
+.load-more-btn {
+  margin: 0 auto 40px;
+  display: none;
+  width: 300px;
+}
+
+.load-more-btn:active,
+.search-btn:active {
+  background-color: #d9b15b;
+}
